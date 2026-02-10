@@ -30,5 +30,4 @@ for tc in range(1, T+1):
                 if visited[n] == False:
                     visited[n] = True
                     stack.append(n)
-
     print(f'#{tc} {answer}')
