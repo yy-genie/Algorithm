@@ -26,7 +26,6 @@ def find(i, j, length, cut_used):
             # 봉우리 높이 비교
             if arr[ni][nj] < arr[i][j]:
                 visited[ni][nj] = True
-                # 재귀
                 find(ni, nj, length + 1, cut_used)
                 visited[ni][nj] = False
             # 높이 때문에 못내려감, but 안깎음
