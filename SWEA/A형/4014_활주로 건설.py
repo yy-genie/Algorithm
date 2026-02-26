@@ -14,7 +14,7 @@ def check(path):
     visited = [False]*N
     
     for i in range(N-1):
-        # 높이 같을 때 다음 인덱스로
+        # 인접 지형 높이 같을 때
         if path[i] == path[i+1]:
             continue
 
@@ -50,6 +50,7 @@ def check(path):
 
     return 1
 
+# main
 for tc in range(1, T+1):
     N, X = map(int, input().split())
     arr = [list(map(int, input().split())) for _ in range(N)]
