@@ -16,8 +16,11 @@ for tc in range(1, T+1):
                 home = 0
                 # 마름모 순회 (GPT 도움!!)
                 K = k - 1
+                # 위 K줄 ~ 아래 K줄 (몇 줄 볼지 결정)
                 for dx in range(-K, K+1):
+                    # 해당 줄에서 좌우 범위 계산
                     limit = K - abs(dx)
+                    # 그 줄의 모든 칸 방문
                     for dy in range(-limit, limit+1):
                         ni = x + dx
                         nj = y + dy
