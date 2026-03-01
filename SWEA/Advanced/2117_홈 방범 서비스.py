@@ -15,6 +15,7 @@ for tc in range(1, T+1):
             for k in range(1, 2*N):  # k : 1 2 3 ...
                 home = 0
                 # 마름모 순회 (GPT 도움!!)
+                # ----------------------------------------
                 K = k - 1
                 # 위 K줄 ~ 아래 K줄 (몇 줄 볼지 결정)
                 for dx in range(-K, K+1):
@@ -24,13 +25,14 @@ for tc in range(1, T+1):
                     for dy in range(-limit, limit+1):
                         ni = x + dx
                         nj = y + dy
+                # ----------------------------------------
                         # 범위 확인
                         if 0<=ni<N and 0<=nj<N:
                             # 집이 있을 경우
                             if arr[ni][nj] == 1:
                                 home += 1
                 # 이익 계산
-                profit = M*home - cost(k)
+                profit = M * home - cost(k)
                 # 손해 여부
                 if profit >= 0:
                     # home 개수 비교
