@@ -1,6 +1,6 @@
 T = int(input())
 
-D = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+D = [[0, 1], [1, 0], [0, -1], [-1, 0]]
 
 for tc in range(1, T+1):
     N, M = map(int, input().split())
