@@ -40,3 +40,16 @@ for tc in range(1, T+1):
                         answer = home
 
     print(f'#{tc} {answer}')
+
+
+'''
+마름모 순회
+for k in range(1, 2*N):
+-----------------------------------------------------
+    K = k - 1
+    for dx in range(-K, K+1):
+        for dy in range(-(K-abs(dx)), K+abs(dx)+1):
+        ni = x + dx
+        ny = y + dy
+-----------------------------------------------------
+'''
