@@ -20,15 +20,16 @@ for tc in range(1, T+1):
     arr = list(map(int, input().split()))
     player1 = [0]*10
     player2 = [0]*10
+    winner = 0
 
     for i in range(len(arr)):
         if i % 2 == 0:
             player1[arr[i]] += 1
         else:
             player2[arr[i]] += 1
-        if i>=5:
+        if i>=6:
             winner = babyjin(player1, player2)
-
-    # print(player1, player2)
+            if winner != 0:
+                break
 
     print(f'#{tc} {winner}')
