@@ -37,5 +37,11 @@ def union_set(x, y):
     
     p[king_y] = king_x
 
-p = [i for i in range(N+1)]
-print(p)
+# p = [i for i in range(N+1)]
+# print(p)
+
+# 모든 연산이 끝난 후 대표를 찾는 연산(경로 압축)
+for i in range(N+1):
+    find_set2(i)
+
+print(i)
